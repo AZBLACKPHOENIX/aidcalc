@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aid Finance Calc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="email.js"></script>
+  <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("J01QMSmqj93QY8gmJ");
+      })();
+    </script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("JLhUUvvuWuYUPzSvs");
+   })();
+</script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="home" href="#">Aid Finance</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" id="a_link">Home</a></li>
+                    <li><a href="how.html" id="a_link">How To Use?</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="a_link">Calculators <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="investment-calculator.html">Investment Calculator</a></li>
+                            <li><a href="tax-calculator.html">Tax Calculator</a></li>
+                            <li><a href="budget-calculator.html">Budget Calculator</a></li>
+                            <li><a href="retirement-calculator.html">Retirement Calculator</a></li>
+                            <li><a href="debt-payoff-calculator.html">Debt Payoff Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="refer.html" id="a_link">Refer A Friend</a></li>
+                 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signin.html" id="a_link"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html" id="a_link"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+    <!-- Explanation Section -->
+<div class="explanation">
+<h2 id="how">How the Calculator Works</h2>
+<p id ="innercontent"> The Business Partners Fixed Investments Calculator helps you estimate the returns on your fixed investments. Here's a step-by-step guide:</p>
+
+<!-- Step 1: Input Investment Details -->
+<div class="step">
+  <h3>Step 1: Input Investment Details</h3>
+  <p>Enter the amount you plan to invest in the "Enter Investment Amount" field. Adjust the investment period using the range input to set the duration of your investment.</p>
+</div>
+
+<!-- Step 2: Real-time Calculation -->
+<div class="step">
+  <h3>Step 2: Real-time Calculation</h3>
+  <p>The calculator performs real-time calculations as you input your investment details. It calculates the Return on Investment (ROI) and the Total Amount Returned based on a fixed interest rate of 5% per month.</p>
+</div>
+
+<!-- Step 3: Cumulative Balance Graph -->
+<div class="step">
+  <h3>Step 3: Cumulative Balance Graph</h3>
+  <p>Below the input fields, you'll find a line graph illustrating the cumulative balance over the selected investment period. The blue line represents the total amount returned, while the green line shows the initial investment amount.</p>
+  <p>Note: The green line stays constant because it represents the initial investment, while the blue line increases over time as your returns accumulate.</p>
+</div>
+
+<!-- Additional Information -->
+<div class="additional-info">
+  <h2>Additional Information</h2>
+  <p>The calculator assumes a fixed interest rate of 5% per month for the investment period. The graph will be a fixed straight line graph</p>
+  <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+</div>
+</div>
+</div>
+
+<footer class="text-center bg-dark text-white p-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Our Aim</h4>
+                <p>Providing financial solutions to empower individuals and businesses.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Our Services</h4>
+                <p>Personal Loans, Business Loans, Investment Planning, Financial Consulting.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Reach Us</h4>
+                <p>Contact us at <a href="mailto:info@aidfinance.com">info@aidfinance.com</a> or +27 61 067 0796</p>
+                <!-- Social Media Icons -->
+                <div class="social-icons mt-3">
+                    <a href="https://wa.me/+27610670796" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <p>Aid Finance (Pty) Ltd is a registered credit provider with NCRCP17839</p>
+        <p>&copy; 2023 Aid Finance Fixed Calculator. Developed by BrightenedHorizons</p>
+    </div>
+</footer>
+

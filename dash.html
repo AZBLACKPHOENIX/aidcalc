@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aid Finance Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .list-group-item {
+      border: 1px solid #ddd;
+      height: 130px;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .list-group-item i {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .list-group-item.active {
+      background-color: #ff00dd;
+    }
+
+    .dashboard-part {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+      height: 180px;
+    }
+
+    .dashboard-part i {
+      font-size: 36px;
+    }
+
+    .refer-container {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .refer-steps {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .refer-step {
+      text-align: center;
+    }
+
+    .refer-icons {
+      font-size: 36px;
+    }
+
+    .refer-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .refer-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .refer-button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .refer-button.email {
+      background-color: #ff69b4;
+      color: #fff;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    .refer-button.copy {
+      background-color: #fff;
+      color: #ff69b4;
+      border: 1px solid #ff69b4;
+    }
+
+    .refer-button:hover {
+      background-color: #ff4785;
+    }
+
+    #dashboard{
+        margin-top:0px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="home" href="#">Aid Finance Investment</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <!-- Add your navbar links if needed -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html" id="a_link"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 sidebar">
+        <br>
+        <br>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">
+            <i class="fas fa-tachometer-alt"></i> <h3>Dashboard</h3>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="fas fa-chart-line"></i> <h3>Invest</h3>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="fas fa-credit-card"></i> <h3>Payment Details</h3>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="fas fa-money-bill-wave"></i> <h3>Withdraw Amount</h3>
+          </a>
+
+          <a href="#" class="list-group-item">
+            <i class="fas fa-tools"></i> <h3>Settings</h3>
+          </a>
+        </div>
+
+        
+      </div>
+
+      <div class="col-sm-9 dashboard-content">
+        <br><br>
+        <h1 id="dashboard">Dashboard</h1>
+
+        <!-- Dashboard Parts -->
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="dashboard-part">
+              <i class="fas fa-users"></i>
+              <h4>Number of People Referred</h4>
+              <p>100</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dashboard-part">
+              <i class="fas fa-user-check"></i>
+              <h4>Referred Registered</h4>
+              <p>80</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dashboard-part">
+              <i class="fas fa-hand-holding-usd"></i>
+              <h4>Referred Invested</h4>
+              <p>50</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dashboard-part">
+              <i class="fas fa-money-check-alt"></i>
+              <h4>Total Amount</h4>
+              <p>$100,000</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Refer to a Friend Section -->
+        <div class="refer-container">
+          <h2>Refer to a Friend</h2>
+          <div class="refer-steps">
+            <div class="refer-step">
+              <div class="refer-icons">&#128172;</div>
+              <h3>Share to Friend</h3>
+            </div>
+            <div class="refer-step">
+              <div class="refer-icons">&#9997;</div>
+              <h3>Your Friend Registers</h3>
+            </div>
+            <div class="refer-step">
+              <div class="refer-icons">&#128181;</div>
+              <h3>You Get Commission</h3>
+            </div>
+          </div>
+          <p>Share with your friends and earn commission when they register!</p>
+          <input class="refer-input" type="text" id="generatedCode" readonly>
+          <div class="refer-buttons">
+            <a class="refer-button email" href="mailto:?subject=Join%20AID%20FINANCE&body=Use%20this%20code%20to%20register:%20GeneratedCode123">Share via Email</a>
+            <button class="refer-button copy" onclick="copyCode()">Copy Code</button>
+            <button class="refer-button" onclick="generateCode()">Generate Code</button>
+          </div>
+
+
+<script>
+    // Function to generate a random referral code
+    function generateCode() {
+      // Generate a random string (you can customize the length and characters)
+      const code = Math.random().toString(36).substring(7);
+      // Set the generated code to the input field
+      document.getElementById('generatedCode').value = code;
+      // Update the email link with the generated code
+      const emailLink = document.getElementById('emailLink');
+      emailLink.href = `mailto:?subject=Join%20AID%20FINANCE&body=Use%20this%20code%20to%20register:%20${code}`;
+    }
+  
+    // Function to copy the referral code to the clipboard (you can customize this function if needed)
+    function copyCode() {
+      const codeInput = document.getElementById('generatedCode');
+      codeInput.select();
+      document.execCommand('copy');
+      alert('Code copied to clipboard!');
+    }
+  </script>

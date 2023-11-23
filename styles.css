@@ -1,0 +1,316 @@
+
+    /* Custom styles for the navbar */
+    .navbar.navbar-inverse {
+      background-color: white !important;
+      color: hotpink !important;
+      border: 0px solid hotpink; /* Add a border for visibility */
+      box-shadow: 0px 0px 8px grey;
+    }
+
+    * {
+    outline: none;
+    transition: 1.5s;
+    text-decoration: none;
+    }
+
+    #a_link:hover{
+        color: black !important;
+        text-decoration:underline;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+        background-color: white !important;
+    }
+
+    #home{
+        color:black;
+    }
+
+    /* Custom styles for the navbar links */
+    .navbar.navbar-inverse .navbar-nav > li > a {
+      color: hotpink !important;
+      font-size: 16px; /* Adjust the font size */
+    }
+
+    /* Custom styles for the navbar on small screens */
+    @media (max-width: 767px) {
+      .navbar.navbar-inverse {
+        width: 100%; /* Make the navbar full width */
+      }/* Custom styles for the navbar toggle button on small screens */
+@media (max-width: 767px) {
+    .navbar-toggle {
+        border: 1px solid #000 !important; /* Black border for the initial state */
+    }
+    
+    /* Custom styles for the inner icon in the navbar toggle button */
+    .navbar-toggle .icon-bar {
+        background-color: #ff007f !important; /* Hotpink color for the inner icon */
+    }
+}
+
+    }
+
+
+/* Custom styles for the calculator */
+.calculator {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.styled-input {
+    font-size: 24px;
+    padding: 5px;
+    width: 100%;
+    border: 2px solid #ff007f;
+    border-radius: 10px;
+}
+
+.round-input {
+    width: 100%;
+    height: 20px;
+    background-color: hotpink;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 10px;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.round-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 2px solid hotpink;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* For Firefox */
+.round-input::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 2px solid hotpink;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#periodValue {
+    font-size: 18px;
+    color: #ff007f;
+}
+
+
+
+#periodValue {
+    font-size: 18px;
+    color: #ff007f;
+}
+
+#left{
+    background-color: #ff007f;
+    color: white;
+}
+
+#left button{
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow:0px 0px 8px white;
+    background-color: #ff007f;
+}
+
+
+.refer-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.refer-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.refer-step {
+    text-align: center;
+}
+
+.refer-step h3 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.refer-icons {
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.refer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.refer-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.refer-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.refer-button.email {
+    background-color: #ff69b4;
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.refer-button.copy {
+    background-color: #fff;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+}
+
+.refer-button:hover {
+    background-color: #ff4785;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    width: 100%;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    color: #ff00b3 !important; /* White icon color */
+    font-size: 20px;
+    border-radius: 200%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #e2d4db; /* Hotpink hover color */
+}
+
+/* Common styles for containers */
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0; /* Adjust this value if needed */
+}
+
+/* Styles for login and signup containers */
+.login-container,
+.signup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -20px; /* Adjust this value if needed */
+}
+
+
+
+/* Styles for form groups */
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+/* Styles for form controls */
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ff007f;
+    box-shadow: none;
+}
+
+.form-control :active{
+    box-shadow: 0px 0px 8px #ff007f;
+}
+
+/* Styles for primary button */
+.btn-primary {
+    background-color: #ff007f;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Styles for signup link */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+} 
+
+.navbar .navbar-nav .open .dropdown-menu>li>a {
+    background-color: white;
+}
+
+.dropdown-menu:active{
+    background-color: white;
+}
+
+#how{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: double;
+    text-shadow: 0px 2px 2px rgb(255, 0, 191);
+}
+
+#innercontent{
+    text-align: center;
+    font-style:italic;
+    font-weight: bolder;
+}
+
+.sidebar {
+    background-color: #f8f8f8;
+    height: 100%;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+
+  .dashboard-part {
+    border: 1px solid #ddd;
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    height: 180px; /* Increased height */
+  }
+
+
+  .cont_text{
+    margin-top: 6px;
+  }
